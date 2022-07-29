@@ -65,7 +65,7 @@ def build_data_1ere(temp_data):
         else:
             data_1ere.append({"Matière":spé["nom"], "type":"Spécialitée", "coefficient":00,},)
     
-    table2csv(data_1ere, "data/1ere")
+    table2csv(data_1ere, "data/1ere.csv")
 
 
 def build_data_term(temp_data):
@@ -76,4 +76,4 @@ if not (os.path.exists('data/1ere.csv') or os.path.exists("data/term.csv")):
 
 
 
-#data = csv2table("data.csv")
+print(csv2table("data/1ere.csv"))
