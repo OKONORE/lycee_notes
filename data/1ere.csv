@@ -1,4 +1,9 @@
-Matière;type;coefficient
-1;Spécialitée;0
-2;Spécialitée abandonnée;80
-3;Spécialitée;0
+Matière;type;coefficient;note
+Histoire-géographie;Contrôle continu;33;[]
+Enseignement scientifique;Contrôle continu;25;[]
+LVA;Contrôle continu;33;[]
+LVB;Contrôle continu;33;[]
+Moyenne générale;Contrôle continu;50;[]
+1;Spécialitée;0;[]
+2;Spécialitée;0;[]
+3;Spécialitée abandonnée;80;[]

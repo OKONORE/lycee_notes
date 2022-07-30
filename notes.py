@@ -58,12 +58,18 @@ def temp_data_1ere():
     return temp_data_1ere
 
 def build_data_1ere(temp_data):
-    data_1ere = []
+    data_1ere = [
+        {"Matière":"Histoire-géographie", "type":"Contrôle continu", "coefficient":33, "note":[],},
+        {"Matière":"Enseignement scientifique", "type":"Contrôle continu", "coefficient":25, "note":[],},
+        {"Matière":"LVA", "type":"Contrôle continu", "coefficient":33, "note":[],},
+        {"Matière":"LVB", "type":"Contrôle continu", "coefficient":33, "note":[],},
+        {"Matière":"Moyenne générale", "type":"Contrôle continu", "coefficient":50, "note":[],},
+    ]
     for spé in temp_data["spés"]:
         if spé["abandonnée"] == True:
-            data_1ere.append({"Matière":spé["nom"], "type":"Spécialitée abandonnée", "coefficient":80,})
+            data_1ere.append({"Matière":spé["nom"], "type":"Spécialitée abandonnée", "coefficient":80, "note":[],},)
         else:
-            data_1ere.append({"Matière":spé["nom"], "type":"Spécialitée", "coefficient":00,},)
+            data_1ere.append({"Matière":spé["nom"], "type":"Spécialitée", "coefficient":00, "note":[],},)
     
     table2csv(data_1ere, "data/1ere.csv")
 
